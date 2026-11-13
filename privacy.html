@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy information for Personal AI.">
+  <title>Privacy Policy — Personal AI</title>
+  <style>
+    :root{color-scheme:dark;--bg:#080d1b;--panel:#101a2d;--text:#eaf1ff;--muted:#a8b6ce;--accent:#63d8ff;--line:#23324b}
+    *{box-sizing:border-box}body{margin:0;background:linear-gradient(160deg,#0b1630,var(--bg) 55%);color:var(--text);font:16px/1.7 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+    main{max-width:850px;margin:48px auto;padding:0 20px 64px}header,section{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px;margin:18px 0}
+    h1,h2{line-height:1.25}h1{font-size:2.2rem;margin:0 0 8px}h2{font-size:1.25rem;color:var(--accent);margin-top:0}
+    p,li{color:var(--muted)}a{color:var(--accent)}nav{display:flex;gap:18px;flex-wrap:wrap}small,.meta{color:var(--muted)}.notice{border-left:3px solid var(--accent);padding-left:14px}
+    footer{color:var(--muted);font-size:.9rem;padding:16px 4px}
+  </style>
+</head>
+<body><main>
+  <header>
+    <nav><a href="./index.html">Personal AI</a><a href="./terms.html">Terms of Service</a></nav>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: 14 November 2026</p>
+    <p>This policy explains how the privately operated Personal AI prototype handles information when its owner connects an Instagram Professional account.</p>
+  </header>
+  <section>
+    <h2>1. No sale or independent data collection</h2>
+    <p>Personal AI is a personal-use project, not a public messaging service. The operator does not sell, rent, or trade personal information, and does not use message content for advertising. The current prototype does not maintain its own customer database, analytics profile, or persistent archive of Instagram messages.</p>
+    <p class="notice"><strong>Important distinction:</strong> “We do not store or sell message data” does not mean that no data is processed. To provide an inbox assistant, the application must receive and temporarily process the minimum message information needed to handle an event and prepare a reply.</p>
+  </section>
+  <section>
+    <h2>2. Information that may be processed</h2>
+    <p>When the Instagram integration is enabled, Meta may deliver webhook events containing information such as message text, Instagram-scoped sender or recipient identifiers, message timestamps, and limited attachment or interaction metadata. The application processes only what is needed for the enabled feature.</p>
+    <p>The application may also process technical information needed to secure and operate the connection, such as webhook signatures, delivery status, and basic server request logs. Do not send passwords, payment details, government identifiers, health information, or other sensitive information through the assistant.</p>
+  </section>
+  <section>
+    <h2>3. AI and service providers</h2>
+    <p>If the operator enables an external AI provider, selected message content and relevant instructions may be transmitted to that provider to generate a response. The planned voice and conversational provider is ElevenLabs. This transfer is necessary for the requested AI feature and is governed in part by that provider’s own terms and privacy policy.</p>
+    <p>Meta processes account, authorization, and messaging information under Meta’s own terms and privacy policy. The local development tunnel may route network traffic through Cloudflare, which may process connection and security metadata under its own terms.</p>
+    <p>Personal AI does not control the independent retention or processing practices of Meta, ElevenLabs, Cloudflare, or any other provider. Review their current privacy documentation before enabling an integration.</p>
+  </section>
+  <section>
+    <h2>4. Storage and retention</h2>
+    <p>In the current prototype, Instagram message payloads are not intentionally written to a database or retained as a message archive. They are handled transiently by the local application. The prototype’s current webhook handler verifies and acknowledges events; message interpretation, AI forwarding, and reply sending are not yet implemented.</p>
+    <p>Any future conversation history, persistent memory, analytics, or message-storage feature must be separately disclosed and documented before it is enabled. The operator should keep access tokens and app secrets out of source code and public repositories, and revoke or rotate them if exposed.</p>
+  </section>
+  <section>
+    <h2>5. Security</h2>
+    <p>The project is intended to run as a private, locally operated application. Security depends on the device, account, network tunnel, and third-party services used by the operator. No internet-connected system can be guaranteed completely secure. The operator should restrict access to the local computer, protect credentials, use webhook signature verification, and keep dependencies updated.</p>
+  </section>
+  <section>
+    <h2>6. Choices, deletion, and contact</h2>
+    <p>The account owner can disconnect the Instagram integration and revoke its permissions through Meta/Instagram settings. The operator can stop the local application and remove local configuration or any locally created data. Requests about information handled by Meta or an AI provider must also be directed to that provider.</p>
+    <p>For questions or privacy requests concerning this project, contact the operator through the <a href="https://github.com/MZUBAAJA">GitHub profile</a>. Do not post private message contents, passwords, access tokens, or other sensitive details in a public issue.</p>
+  </section>
+  <section>
+    <h2>7. Changes to this policy</h2>
+    <p>This policy must be updated if the application adds persistent memory, message history, additional AI providers, analytics, or any materially different data use. The effective date above will be revised when a material change is published.</p>
+  </section>
+  <footer>Personal AI · Personal-use prototype · <a href="./terms.html">Terms of Service</a></footer>
+</main></body></html>
